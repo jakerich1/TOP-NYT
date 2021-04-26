@@ -1,22 +1,26 @@
-nav{
-    border-bottom: 1px solid rgb(214, 214, 214); 
+body {
+    padding-bottom: 600px;
+}
+
+nav {
+    border-bottom: 1px solid rgb(214, 214, 214);
     padding: 6px 0;
 }
 
-.navcont{
+.navcont {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1605px;
+    max-width: 1605px;
     margin: auto;
 }
 
-nav .leftNav{
+nav .leftNav {
     display: flex;
     align-items: center;
 }
 
-nav .leftNav button{
+nav .leftNav button {
     background: none;
     color: black;
     border: none;
@@ -26,11 +30,11 @@ nav .leftNav button{
     cursor: pointer;
 }
 
-nav .leftNav button svg{
+nav .leftNav button svg {
     height: 18px;
 }
 
-nav .leftNav a{
+nav .leftNav a {
     font-family: arial;
     text-decoration: none;
     color: black;
@@ -38,12 +42,12 @@ nav .leftNav a{
     font-size: 14.25px;
 }
 
-.navcont img{
+.navcont img {
     width: 195px;
     height: 26px;
 }
 
-.rightNav button{
+.rightNav button {
     border: none;
     padding: 10px;
     color: white;
@@ -51,15 +55,22 @@ nav .leftNav a{
     font-weight: 900;
     border-radius: 3px;
     background-color: #567b95;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
-header{
+.rightNav button:hover {
+    filter: saturate(1.7);
+}
+
+
+header {
     width: 600px;
     margin: auto;
     padding-top: 60px;
 }
 
-header h1{
+header h1 {
     font-family: georgia;
     font-style: italic;
     font-size: 38px;
@@ -67,13 +78,13 @@ header h1{
     font-weight: 900;
 }
 
-.social{
+.social {
     border-top: 1px solid rgb(214, 214, 214);
     margin-top: 20px;
     padding: 20px 0px 35px 0px;
 }
 
-.social button{
+.social button {
     padding: 0px;
     margin-right: 8px;
     background: none;
@@ -85,23 +96,23 @@ header h1{
     border-radius: 50%;
 }
 
-.social button svg{
+.social button svg {
     height: 20px;
     color: black;
 }
 
-.frontimg{
+.frontimg {
     margin: auto;
-    width: 1200px;
+    max-width: 1200px;
     margin-bottom: 60px;
 }
 
-.frontimg img{
+.frontimg img {
     width: 100%;
     margin-bottom: 5px;
 }
 
-.frontimg .caption{
+.frontimg .caption {
     max-width: 900px;
     font-family: georgia;
     color: rgb(73, 73, 73);
@@ -109,14 +120,371 @@ header h1{
     font-weight: 400;
     line-height: 22.5px;
     letter-spacing: -0.5px;
+    padding: 2px 20px;
 }
 
-.frontimg .caption .captionauth{
+.frontimg .caption .captionauth {
     font-size: 14.625px;
     color: rgb(109, 109, 109);
 }
 
-section{
-    width: 600px;
+section {
+    max-width: 600px;
     margin: auto;
+    padding: 0 10px;
+}
+
+.author {
+    color: rgb(51, 51, 51);
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.author .authlink {
+    text-decoration: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    color: rgb(51, 51, 51);
+}
+
+.articledate {
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 60px;
+}
+
+.signup {
+    display: flex;
+    max-width: 600px;
+    margin: 0 20px 25px 20px;
+    padding-top: 13.5px;
+    font-family: georgia, "times new roman", times, serif;
+    font-style: italic;
+    font-size: 19px;
+    border-top: 1px solid rgb(226, 226, 226);
+    line-height: 22px;
+}
+
+.sLeft {
+    padding-right: 40px;
+}
+
+.signup span {
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.signup button {
+    width: 90px;
+    padding: 5px 3px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.signup button:hover {
+    color: white;
+    background-color: black;
+}
+
+p {
+    margin-bottom: 20px;
+    font-family: georgia, "times new roman", times, serif;
+    font-size: 22.5px;
+    line-height: 33.75px;
+}
+
+.pBold {
+    font-weight: 700;
+}
+
+.infoArea {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 0px 30px;
+}
+
+.infoArea .pBold {
+    margin-bottom: 5px;
+}
+
+.infoArea img {
+    width: 100%;
+}
+
+.infoArea .caption {
+    font-size: 14px;
+    color: rgb(112, 112, 112);
+}
+
+.video {
+    margin: 43px 0;
+}
+
+.video iframe {
+    width: 100%;
+}
+
+.vidCaption {
+    margin: 10px 20px 0 0;
+    color: rgb(102, 102, 102);
+    line-height: 20.25px;
+}
+
+.vidCaption span {
+    font-size: 13.5px;
+}
+
+.bodyCap {
+    padding-left: 0 !important;
+}
+
+.socials {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+
+.botInfo {
+    margin-bottom: 20px;
+    font-size: 13.5px;
+    color: rgb(102, 102, 102);
+}
+
+.commentBtn button {
+    width: 100%;
+    background-color: rgb(61, 96, 122);
+    border: 1px solid rgb(50, 104, 145);
+    font-family: arial, sans-serif;
+    color: white;
+    font-size: 14.625px;
+    padding: 10px 0;
+    border-radius: 3px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.commentBtn button:hover {
+    background-color: rgb(50, 104, 145);
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socialLinks button {
+    padding: 0px;
+    margin-right: 8px;
+    background: none;
+    border: none;
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.socialLinks button svg {
+    height: 20px;
+    color: black;
+}
+
+.secTitle {
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.75px;
+    border-top: 1px solid black;
+    padding: 17px 0;
+}
+
+.moreContent {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 276px;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+.cardsholder {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-bottom: 40px;
+}
+
+.articleThumb {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+}
+
+.articleThumb img {
+    width: 100%;
+}
+
+.articleThumb h3 {
+    font-weight: 500;
+    font-size: 20.25px;
+    line-height: 24.75px;
+    font-family: georgia, "times new roman", times, serif;
+    margin: 0;
+}
+
+.articleThumb p {
+    padding: 0;
+    margin: 0;
+    color: rgb(153, 153, 153);
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.popArticle {
+    padding: 15px 0;
+    font-weight: 500;
+    font-size: 20.25px;
+    line-height: 24.75px;
+    font-family: georgia, "times new roman", times, serif;
+    border-top: 1px solid rgb(206, 206, 206);
+}
+
+
+footer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+    border-top: 3px solid rgb(233, 233, 233);
+    font-size: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: arial, sans-serif;
+}
+
+footer .footHead {
+    padding-bottom: 20px;
+}
+
+footer .footHead img {
+    height: 30px;
+    width: auto;
+}
+
+.footLink {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+}
+
+.footMain {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.footAside{
+    border-left: 1px solid rgb(216, 216, 216);
+    padding-left: 20px;
+}
+
+.footCol{
+    padding: 0 10px;
+}
+
+.footCol a{
+    display: block;
+    margin-top: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+#subscribeArea .primaryLink{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#subscribeArea .primaryLink svg{
+    margin-right: 5px;
+}
+
+#subscribeArea .secondary{
+    display: block;
+    margin-top: 15px;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+@media (max-width: 1200px) {
+
+    .footLink {
+        grid-template-columns: 1fr;
+    }
+    .footAside{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .popular {
+        display: none;
+    }
+
+    .moreContent {
+        grid-template-columns: 1fr;
+    }
+
+    .articleThumb {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 60px 1fr;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .footMain{
+        grid-template-columns: 1fr;
+    }
+
+    .footCol{
+        padding: 0;
+    }
+
+    .footCol span{
+        display: block;
+        padding: 20px 0;
+        border-top: 1px solid grey;
+        cursor: pointer;
+        color: black;
+    }
+
+    .linWrap{
+        display: none;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .linWrap:last-child{
+        margin-bottom: 10px;
+    }
+
 }
